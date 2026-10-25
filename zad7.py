@@ -22,16 +22,15 @@ class Brewery(BaseModel):
     street: str | None = None
 
     def __str__(self):
-        return(
-        f"Browar: {self.name} (id: {self.id})",
-        f"  Typ:        {self.brewery_type}",
-        f"  Adres:      {self.street or self.address_1 or '-'}, "
-        f"{self.postal_code} {self.city}, {self.state}, {self.country}",
-        f"  Telefon:    {self.phone}"
-        f"  Strona:     {self.website_url}"
-        f"  Współrzędne: {self.latitude}, {self.longitude}")
+        return (
+            f"Browar: {self.name} (id: {self.id})",
+            f"  Typ:        {self.brewery_type}",
+            f"  Adres:      {self.street or self.address_1 or '-'}, "
+            f"{self.postal_code} {self.city}, {self.state}, {self.country}",
+            f"  Telefon:    {self.phone}"
+            f"  Strona:     {self.website_url}"
+            f"  Współrzędne: {self.latitude}, {self.longitude}")
 
- 
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--city", type=str, default=None)
