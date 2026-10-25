@@ -34,9 +34,11 @@ class Flat(Property):
             f"cena: {self.price} zł")
 
 
-d = House(area=120,rooms=5,price=750000,address="ul. Lipowa 10, Kraków",plot=400,)
+d = House(area=120, rooms=5, price=750000,
+          address="ul. Lipowa 10, Kraków", plot=400,)
 
-m= Flat(area=55,rooms=2,price=420000,address="ul. Rajska 3/12, Kraków",floor=4,)
+m = Flat(area=55, rooms=2, price=420000,
+         address="ul. Rajska 3/12, Kraków", floor=4,)
 
 print(d)
 print(m)
